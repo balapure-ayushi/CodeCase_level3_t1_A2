@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
+        h1
+        {
+            font-size: 2.1rem;
+            text-align: center;
+            line-height: 1.4;
+            letter-spacing: 0.5rem;
+            color: white;
+            margin-top: 30px;
+        }
+
+        
+        
+        .mindiv
+        {
+            width: 70%;
+            height: 550px;
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            
+            transform: translate(-50%,-50%);
+            background-image: url(1.png);
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px wheat;
+            animation: Slider 9s infinite linear;
+        }
+
+        @keyframes Slider
+        {
+            0%{background-image: url(2.png);  background-size:100% 100%;}
+            35%{background-image: url(3.png); background-size:100% 100%;}
+            55%{background-image: url(4.png); background-size:100% 100%;}
+            75%{background-image: url(5.png); background-size:100% 100%;}
+            100%{background-image: url(6.png); background-size:100% 100%;}
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>CSS Slider Animation</h1>
+    <div class="mindiv">
+       
+    </div>
+
+   
+</body>
+
+</html>
